@@ -1,8 +1,8 @@
 all: start
 
 start:
-	reveal-md curso.md
-
+	reveal-md --preprocessor preproc.js curso.md
+ 
 build: clean
 	reveal-md curso.md --static docs --static-dirs=static
 
