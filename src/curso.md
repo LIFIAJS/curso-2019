@@ -197,8 +197,8 @@ Note: Comentar diferentes estandares de ESLint
 
 - Angular
 - Vue
-- Meteor
 - React
+- ...
 
 ---
 
@@ -208,8 +208,14 @@ Note: Comentar diferentes estandares de ESLint
 
 ### Principales características
 
-- Programacion basada en componentes
-- Declarativo
+- Composición de Componentes
+  - Componentes con o sin estado
+- Desarrollo Declarativo
+- Flujo de datos unidireccional
+- Rendimiento gracias al DOM Virtual
+- Isomorfismo
+- Elementos y JSX
+- Ciclo de vida de la s componentes
 
 Note:
 
@@ -219,7 +225,64 @@ Ver primeras componentes, ejemplos
 
 ----
 
-## Construcción
+## Desarrollo Declarativo
+
+----
+
+### Declarativo vs Imperativo
+
+----
+
+#### Imperativo
+
+- Librerías, como JQuery, o Vanilla Javascript
+- Se crean scripts que tienen que informar en el DOM las tareas a realizar
+- Se necesita escribir mucho código
+- En varias ocasiones resulta inmantenible
+
+----
+
+#### Declarativo
+
+- Contamos con un estado de la aplicación
+- Componentes responden ante la variación de ese estado
+- Cuando cambiamos las propiedades de los componentes se produce un cambio en su funcionalidad
+
+----
+
+## Rendimiento gracias al DOM virtual
+
+Las operaciones que realiza React en ejecución son más rápidas.
+
+- Se realizan sobre el DOM virtual
+- Cargado en memoria permite actualizaciones de hasta 60 frames por segundo
+- Sensación de fluidez
+
+----
+
+## Isomorfismo
+
+- También conocido como JavaScript universal
+- Capacidad de ejecutar código tanto en el cliente como en el servidor
+- Soluciona problemas de posicionamiento tradicionales
+
+----
+
+## Elementos y JSX
+
+El código que embebemos con ReactJS dentro de Javascript, es JSX.
+
+- Apariencia HTML
+- Utilizamos una sintaxis propia y el resultado son elementos en memoria y no DOM tradicional
+- React DOM y la herramienta de diffing convierten los elementos devueltos por JSX en DOM Real
+
+----
+
+## Componentes
+
+----
+
+### Construcción
 
 - Component
 - PureComponent
@@ -228,7 +291,7 @@ Note: Mostrar la diferencia entre crear componentes desde la clase y desde una f
 
 ----
 
-## Propiedades
+### Propiedades
 
 Todas las componentes pueden recibir propiedades.
 
@@ -238,7 +301,7 @@ Veremos luego que estas propiedades pueden estar tipadas
 
 ----
 
-## Estado interno
+### Estado interno
 
 Casi todas las componentes pueden acceder y modificar su estado interno.
 
@@ -250,7 +313,7 @@ Pero se modifica mediante la función `this.setState`
 
 ----
 
-## Ciclo de vida básico
+### Ciclo de vida básico
 
 <img src="static/lifecycle-simple.jpeg" style="background:none; border:none; box-shadow:none;">
 
@@ -260,36 +323,36 @@ Note:
 
 ----
 
-## Ciclo de vida completo sin errores
+### Ciclo de vida completo sin errores
 
 <img src="static/lifecycle.jpeg" style="background:none; border:none; box-shadow:none;">
 
 ----
 
-## Ciclo de vida para errores
+### Ciclo de vida para errores
 
 - `static getDerivedStateFromError`
 - `componentDidCatch`
 
 ----
 
-## Eventos
+### Eventos
 
 ----
 
-## Renderizado condicional
+### Renderizado condicional
 
 ----
 
-## Renderizado de componentes mediante listas
+### Renderizado de componentes mediante listas
 
 ----
 
-## Composición
+### Composición
 
 ----
 
-## Jerarquía de componentes
+### Jerarquía de componentes
 
 React es una librería orientada a objetos
 
