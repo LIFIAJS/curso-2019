@@ -7,7 +7,7 @@ const port = parseInt(process.argv[2]) || 9000
  * 
  * @param {String} url Es la url
  * 
- * @returns {Array<String,Number>} Par Datos, Estado de la respuesta
+ * @returns {Array} Par Datos, Estado de la respuesta
  */
 function router(url) {
   switch(url) {
