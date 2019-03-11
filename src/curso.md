@@ -16,48 +16,48 @@ Capacitación de JavaScript
 
 ---
 
-FILE: sections/01-about.md
+FILE: 01-about.md
 
 ---
 
-FILE: sections/02-introduction-js.md
+FILE: 02-introduction-js.md
 
 ---
 
-FILE: sections/03-javascript-web.md
+FILE: 03-javascript-web.md
 
 ---
 
-FILE: sections/04-new-javascript.md
+FILE: 04-new-javascript.md
 
 ---
 
-FILE: sections/05-frontend.md
+FILE: 05-frontend.md
 
 ---
 
-FILE: sections/06-react.md
+FILE: 06-react.md
 
 ---
 
-FILE: sections/07-react-patterns.md
+FILE: 07-react-patterns.md
 
 ---
 
-FILE: sections/08-redux.md
+FILE: 08-redux.md
 
 ---
 
-FILE: sections/09-frontend-testing.md
+FILE: 09-frontend-testing.md
 
 ---
 
-FILE: sections/10-backend.md
+FILE: 10-backend.md
 
 ---
 
-FILE: sections/11-backend-testing.md
+FILE: 11-backend-testing.md
 
 ---
 
-FILE: sections/12-databases.md
+FILE: 12-databases.md
