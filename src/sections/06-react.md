@@ -5,12 +5,12 @@
 ### Principales características
 
 - Composición de Componentes
-  - Componentes con o sin estado
 - Desarrollo Declarativo
 - Flujo de datos unidireccional
 - Rendimiento gracias al DOM Virtual
 - Isomorfismo
 - Elementos y JSX
+- Componentes con o sin estado
 - Ciclo de vida de la s componentes
 
 Note:
@@ -42,7 +42,7 @@ Ver primeras componentes, ejemplos
 
 - Contamos con un estado de la aplicación
 - Componentes responden ante la variación de ese estado
-- Cuando cambiamos las propiedades de los componentes se produce un cambio en su funcionalidad
+- Cuando cambiamos las propiedades de las componentes se produce un cambio en su funcionalidad
 
 ----
 
@@ -97,15 +97,49 @@ Veremos luego que estas propiedades pueden estar tipadas
 
 ----
 
+```jsx
+const Person = props => (
+    <div>
+        { props.name } { props.surname }
+    </div>
+)
+
+const Profile = () => <Person name='Tincho' surname='Brecito' />
+```
+
+----
+
+```jsx
+class Person extends Component {
+    render() {
+        const { name, surname } = this.props
+
+        return (
+            <div>
+                { name } { surname }
+            </div>
+        )
+    }
+}
+
+const Profile = () => <Person name='Tincho' surname='Brecito' />
+```
+
+----
+
 ### Estado interno
 
 Casi todas las componentes pueden acceder y modificar su estado interno.
 
-Este estado interno se accede directamente desde `this.props`
+Este estado interno se accede directamente desde `this.state`
 
 Pero se modifica mediante la función `this.setState`
 
 **Nunca se debe modificar directamente el estado interno**
+
+----
+
+
 
 ----
 
@@ -140,19 +174,19 @@ Note:
 
 ----
 
-### Renderizado de componentes mediante listas
+### Renderizado de componentes mediante colecciones
 
 ----
 
-### Composición
+### Composición de Componentes
 
 ----
 
 ### Jerarquía de componentes
 
-React es una librería orientada a objetos
+React es una librería cuya API es orientada a objetos.
 
-Entonces se prefiere la jerarquía de componentes para evitar código repetido
+Entonces, ¿es recomendable utilizar jerarquías de componentes para evitar código repetido?
 
 ----
 
