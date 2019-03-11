@@ -4,7 +4,7 @@ start:
 	reveal-md curso.md
 
 build: clean
-	reveal-md curso.md --static .. --static-dirs=static
+	reveal-md curso.md --static docs --static-dirs=static
 
 clean:
 	-rm -r _static
