@@ -4,7 +4,7 @@ start:
 	reveal-md --preprocessor preproc.js curso.md
  
 build: clean
-	reveal-md curso.md --static docs --static-dirs=static
+	reveal-md curso.md --static docs --static-dirs=static --preprocessor preproc.js
 
 clean:
 	-rm -r _static
