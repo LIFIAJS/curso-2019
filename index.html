@@ -167,6 +167,28 @@ JavaScript es un lenguaje interpretado sin tipos, propenso a errores en runtime
 - Vue
 - React
 - ...
+</script></section><section data-markdown><script type="text/template">
+## Angular
+</script></section><section data-markdown><script type="text/template">
+## Vue
+
+<pre><code class=' javascript hljs' data-trim contenteditable>new Vue({
+  el: '#editor',
+  data: {
+    input: '# hello'
+  },
+  computed: {
+    compiledMarkdown: function () {
+      return marked(this.input, { sanitize: true })
+    }
+  },
+  methods: {
+    update: _.debounce(function (e) {
+      this.input = e.target.value
+    }, 300)
+  }
+})
+</code></pre>
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## React
 </script></section><section data-markdown><script type="text/template">
@@ -402,7 +424,7 @@ Posibilidad de proyectos Full Stack JS
 
 Uso de la libreria `http` de node para atender requests en un servidor
 
-<pre><code class='javascript hljs' data-trim contenteditable>const http = require('http')
+<pre><code class=' javascript hljs' data-trim contenteditable>const http = require('http')
 
 const server = http.createServer((req, res) => {
   res.end('First server')
@@ -417,7 +439,7 @@ server.listen(9000)
 </script></section><section data-markdown><script type="text/template">
 ### Un ejemplo un poco más complejo
 
-<pre><code class='javascript hljs' data-trim contenteditable>#!/usr/bin/env node
+<pre><code class=' javascript hljs' data-trim contenteditable>#!/usr/bin/env node
 const http = require('http')
 
 const port = parseInt(process.argv[2]) || 9000
@@ -510,7 +532,7 @@ Reescribamos los mismos ejemplos de los servidores con express
 </script></section><section data-markdown><script type="text/template">
 ## Servidor simple
 
-<pre><code class='javascript hljs' data-trim contenteditable>const express = require('express')
+<pre><code class=' javascript hljs' data-trim contenteditable>const express = require('express')
 
 const app = express()
 
@@ -521,7 +543,7 @@ app.listen(9000, () => console.log('Listening on port 9000'))
 </script></section><section data-markdown><script type="text/template">
 ## Segundo ejemplo
 
-<pre><code class='javascript hljs' data-trim contenteditable>#!/usr/bin/env node
+<pre><code class=' javascript hljs' data-trim contenteditable>#!/usr/bin/env node
 const express = require('express')
 
 const app = express()
