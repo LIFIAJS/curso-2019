@@ -1,2 +1,8 @@
-_static/
-node_modules
+node_modules/
+css/
+lib/
+plugin/
+js/
+static/
+
+*.html

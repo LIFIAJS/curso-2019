@@ -32,8 +32,8 @@ const preprocess = (markdown) =>
     markdown
         .split(LINE_SEPARATOR)
         .map(line => {
-            if (isFileReference(line)) return loadFileContent(line, 'sections')
-            else if (isCodeFileReference(line)) return loadCodeFileContent(line, 'examples')
+            if (isFileReference(line)) return loadFileContent(line, 'src/sections')
+            else if (isCodeFileReference(line)) return loadCodeFileContent(line, 'src/examples')
             return line
         })
         .join(LINE_SEPARATOR)
