@@ -97,25 +97,15 @@ Veremos luego que estas propiedades pueden estar tipadas
 
 ----
 
+#### Función constructora
+
 CODE: frontend/react/props-function.js javascript editable
 
 ----
 
-```jsx
-class Person extends Component {
-    render() {
-        const { name, surname } = this.props
+#### Sintaxis de clases
 
-        return (
-            <div>
-                { name } { surname }
-            </div>
-        )
-    }
-}
-
-const Profile = () => <Person name='Tincho' surname='Brecito' />
-```
+CODE: frontend/react/props-class.js javascript editable
 
 ----
 
