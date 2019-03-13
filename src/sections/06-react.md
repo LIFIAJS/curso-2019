@@ -11,7 +11,7 @@
 - Isomorfismo
 - Elementos y JSX
 - Componentes con o sin estado
-- Ciclo de vida de la s componentes
+- Ciclo de vida de las componentes
 
 Note:
 
@@ -97,15 +97,7 @@ Veremos luego que estas propiedades pueden estar tipadas
 
 ----
 
-```jsx
-const Person = props => (
-    <div>
-        { props.name } { props.surname }
-    </div>
-)
-
-const Profile = () => <Person name='Tincho' surname='Brecito' />
-```
+CODE: frontend/react/props-function.js javascript editable
 
 ----
 
