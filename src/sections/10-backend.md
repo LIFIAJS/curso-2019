@@ -16,13 +16,13 @@ Posibilidad de proyectos Full Stack JS
 
 Uso de la libreria `http` de node para atender requests en un servidor
 
-CODE: backend/http/first.js editable
+CODE: backend/http/first.js javascript editable
 
 ----
 
 ### Un ejemplo un poco más complejo
 
-CODE: backend/http/second.js editable
+CODE: backend/http/second.js javascript editable
 
 ----
 
@@ -57,13 +57,13 @@ Reescribamos los mismos ejemplos de los servidores con express
 
 ## Servidor simple
 
-CODE: backend/express/first.js editable
+CODE: backend/express/first.js javascript editable
 
 ----
 
 ## Segundo ejemplo
 
-CODE: backend/express/second.js editable
+CODE: backend/express/second.js javascript editable
 
 ----
 
