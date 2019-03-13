@@ -10,6 +10,7 @@ cache:
 script:
   - yarn
   - yarn build
+  - mv curso.html index.html
 
 deploy:
   provider: pages
