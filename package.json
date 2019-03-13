@@ -1,0 +1,22 @@
+{
+  "name": "curso-2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:LIFIAJS/curso-2019.git",
+  "authors": [
+    "jbazzo <javier.bazzoco@lifia.info.unlp.edu.ar>",
+    "ulises-jeremias <ucornejofandos@lifia.info.unlp.edu.ar>",
+    "lucasdc6 <ldicunzolo@lifia.info.unlp.edu.ar>"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "reveal-md src/curso.md",
+    "build": "reveal-md src/curso.md --static . --static-dirs=src/static --highlight-theme=atom-one-dark",
+    "open:chrome": "yarn build && chrome index.html",
+    "open:chromium": "yarn build && chromium index.html",
+    "open:firefox": "yarn build && firefox index.html"
+  },
+  "devDependencies": {
+    "reveal-md": "^3.0.3"
+  }
+}
