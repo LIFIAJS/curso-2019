@@ -3,12 +3,12 @@ const path = require('path')
 
 const LINE_SEPARATOR = '\n'
 const FILE_REF_REGEX = /^FILE: (.+)$/
-const CODE_FILE_REF_REGEX = /^CODE: (\S+)( editable)?$/
+const CODE_FILE_REF_REGEX = /^CODE: (\S+)( \S+)( editable)?$/
 
-const codeEditableTemplate = code => (`<pre><code class='javascript hljs' data-trim contenteditable>${code}
+const codeEditableTemplate = (code, lang = 'javascript') => (`<pre><code class='${lang} hljs' data-trim contenteditable>${code}
 </code></pre>`)
 
-const codeTemplate = code => (`<pre><code class='javascript hljs' data-trim>${code}
+const codeTemplate = (code, lang = 'javascript') => (`<pre><code class='${lang} hljs' data-trim>${code}
 </code></pre>`)
 
 const isFileReference = line => FILE_REF_REGEX.test(line)
@@ -21,11 +21,12 @@ const loadFileContent = (line, basePath) => {
 
 const loadCodeFileContent = (line, basePath) => {
     const filePath = line.match(CODE_FILE_REF_REGEX)[1]
-    const editable = line.match(CODE_FILE_REF_REGEX)[2]
+    const lang = line.match(CODE_FILE_REF_REGEX)[2]
+    const editable = line.match(CODE_FILE_REF_REGEX)[3]
 
     const code = readFileSync(path.join(basePath, filePath), 'utf8')
 
-    return editable ? codeEditableTemplate(code) : codeTemplate(code)
+    return editable ? codeEditableTemplate(code, lang) : codeTemplate(code, lang)
 }
 
 const preprocess = (markdown) =>
