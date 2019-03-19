@@ -30,7 +30,3 @@ Note: Ejemplos
   - No hay nada parecido a un import, require o include en un navegador
 - No queremos programar mas en Vanilla. Queremos un require!
   - Transpilación
-
-----
-
-### Soluciones
