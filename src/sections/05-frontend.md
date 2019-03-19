@@ -91,16 +91,19 @@
   <small>
     Lo veremos con más detalle.
   </small>
+
+----
+
 - Buen soporte para Server Side Rendering (SSR)
 - Enlace de datos (Data-binding) unidireccional.
   <small>
     Significa menor cantidad de _side effects_.
   </small>
 - Redux, la librería más utilizada para manejo de estado de aplicaciones React.
-  <small>
-    Facil de aprender y especializar.
-  </small>
 - Implementa conceptos de Programación Funcional (**FP** del inglés _Functional Programming_).
+
+----
+
 - Las aplicaciones pueden desarrollarse en forma tipada utilizando TypeScript o [Flow](https://flow.org/), con soporte para JSX.
 - Migrar entre versiones es generalmente simple.
 - Las cosas aprendidas en React pueden ser aplicadas (muchas veces en forma directa) al desarrollo en React Native.
