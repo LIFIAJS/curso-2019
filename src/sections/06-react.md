@@ -21,6 +21,8 @@ Note:
 
 [React](https://reactjs.org)
 
+[Tutoriales](https://egghead.io/browse/frameworks/react)
+
 Ver primeras componentes, ejemplos
 
 ----
@@ -172,7 +174,7 @@ Note:
 
 React es una librería cuya API es orientada a objetos.
 
-Entonces, ¿es recomendable utilizar jerarquías de componentes para evitar código repetido?
+¿es recomendable utilizar jerarquías de componentes para evitar código repetido?
 
 ----
 

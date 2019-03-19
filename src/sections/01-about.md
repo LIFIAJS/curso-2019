@@ -4,6 +4,7 @@
 
 ### Docentes
 
+- Angel Javier Bazzocco
 - Ulises Jeremias Cornejo Fandos
 - Lucas Di Cunzolo
 
@@ -11,13 +12,14 @@
 
 ### Objetivos
 
-- Tener una idea general de JS vanilla
-- Desarrollar una aplicación React
-- Desarrollar un backend en express
+- Adquirir conocimientos generales de JS Vanilla
+- Asimilar el uso de ES6
+- Desarrollar una aplicación React sobre ES6
+- Desarrollar un backend en express sobre ES6
 
 ----
 
-### Certificaciones
+### Constancia de aprobación
 
 - Desarrollador Frontend React
 - Desarrollador Backend Express y Node
@@ -27,6 +29,6 @@
 
 ### Requisitos para las certificaciones
 
-- Asistir al curso
+- Asistir al 80% de las clases
 - Contar con una entrega que demuestre los contenidos mínimos de la certificación
   - Las entregas puede contar con reentregas dependiendo el caso
