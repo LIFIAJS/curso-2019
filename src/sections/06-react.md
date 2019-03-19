@@ -2,6 +2,10 @@
 
 ----
 
+
+
+----
+
 ### Principales características
 
 - Composición de Componentes
@@ -177,3 +181,31 @@ Entonces, ¿es recomendable utilizar jerarquías de componentes para evitar cód
 ----
 
 <img src="static/inheritance-react.png" style="background:none; border:none; box-shadow:none;">
+
+----
+
+## Ejemplos
+
+Observaremos paso a paso ejemplos que nos permitan repasar cada uno de los conceptos mencionados.
+
+<small>
+    Los mismos son tomados de la [página oficial](https://reactjs.org/) de ReactJS.
+</small>
+
+----
+
+### Componente Simple
+
+CODE: frontend/react/simple-component.js jsx editable
+
+----
+
+### Componente con estado interno
+
+CODE: frontend/react/stateful-component.js jsx editable
+
+----
+
+### Aplicación
+
+CODE: frontend/react/todo-app.js jsx editable
