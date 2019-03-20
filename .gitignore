@@ -4,5 +4,6 @@ js/
 lib/
 plugin/
 static/
+!src/static/
 
 *.html
