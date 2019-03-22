@@ -1,6 +1,4 @@
-<img src="static/react.png" style="background:none; border:none; box-shadow:none; width: 30%; height: 30%;">
-
-# React
+<!-- .slide: data-background="static/react-background.png" data-background-transition="zoom" -->
 
 ----
 
