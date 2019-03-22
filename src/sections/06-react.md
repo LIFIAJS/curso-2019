@@ -1,4 +1,6 @@
-## React
+<img src="static/react.png" style="background:none; border:none; box-shadow:none; width: 30%; height: 30%;">
+
+# React
 
 ----
 
@@ -15,7 +17,7 @@ React representa una base sólida sobre la cual se puede **construir casi cualqu
 
 ----
 
-### Principales características
+## Principales características
 
 - Composición de Componentes
 - Desarrollo Declarativo
@@ -44,7 +46,7 @@ Ver primeras componentes, ejemplos
 
 ----
 
-#### Imperativo
+### Imperativo
 
 - Librerías, como JQuery, o Vanilla Javascript
 - Se crean scripts que tienen que informar en el DOM las tareas a realizar
@@ -53,7 +55,7 @@ Ver primeras componentes, ejemplos
 
 ----
 
-#### Declarativo
+### Declarativo
 
 - Contamos con un estado de la aplicación
 - Componentes responden ante la variación de ese estado
@@ -63,8 +65,7 @@ Ver primeras componentes, ejemplos
 
 ## Rendimiento gracias al DOM virtual
 
-Las operaciones que realiza React en ejecución son más rápidas.
-
+- Las operaciones que realiza React en ejecución son más rápidas.
 - Se realizan sobre el DOM virtual
 - Cargado en memoria permite actualizaciones de hasta 60 frames por segundo
 - Sensación de fluidez

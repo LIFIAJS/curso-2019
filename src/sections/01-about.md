@@ -31,4 +31,4 @@
 
 - Asistir al 80% de las clases
 - Contar con una entrega que demuestre los contenidos mínimos de la certificación
-  - Las entregas puede contar con reentregas dependiendo el caso
+  - Las entregas pueden contar con reentregas dependiendo el caso
