@@ -11,7 +11,9 @@
   "license": "MIT",
   "scripts": {
     "start": "reveal-md src/curso.md",
+    "start:record": "obs --startrecording --collection ./obs-record",
     "build": "reveal-md src/curso.md --static . --static-dirs=src/static --highlight-theme=atom-one-dark",
+    "clear": "rm -r css/ js/ lib/ plugin/ static/ curso.html index.html",
     "open:chrome": "yarn build && chrome index.html",
     "open:chromium": "yarn build && chromium index.html",
     "open:firefox": "yarn build && firefox index.html"

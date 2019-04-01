@@ -137,9 +137,6 @@ Pero se modifica mediante la función `this.setState`
 ----
 
 
-
-----
-
 ### Ciclo de vida básico
 
 <img src="static/lifecycle-simple.jpeg" style="background:none; border:none; box-shadow:none;">
@@ -220,3 +217,11 @@ CODE: frontend/react/stateful-component.js jsx editable
 ### Aplicación
 
 CODE: frontend/react/todo-app.js jsx editable
+
+----
+
+### Online Playgrounds
+
+- [CodePen](https://reactjs.org/redirect-to-codepen/hello-world)
+- [CodeSandbox](https://codesandbox.io/s/new)
+- [Glitch](https://glitch.com/edit/#!/remix/starter-react-template)
