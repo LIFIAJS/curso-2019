@@ -1,21 +1,67 @@
-## Frontend
+# Frontend
 
 ----
 
-### Librerías y Frameworks
+<div class="row">
+  <div class="col-3">
+    <img src="static/react.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+  <div class="col-3">
+    <img src="static/redux.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+  <div class="col-3">
+    <img src="static/webpack.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+  <div class="col-3">
+    <img src="static/eslint.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+</div>
 
-- Angular
-- Vue
-- React
-- ...
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-3">
+    <img src="static/node.png" style="background: none; border: none; box-shadow: none;">      
+  </div>
+  <div class="col-3">
+    <img src="static/babel.png" style="background: none; border: none; box-shadow: none;">      
+  </div>
+  <div class="col-3"></div>
+</div>
 
 ----
+
+## Librerías y Frameworks
+
+<div class="row">
+  <div class="col-4 center">
+    <img src="static/angular.png" style="background: none; border: none; box-shadow: none; height: 30%;">
+    <br>
+    Angular
+  </div>
+  <div class="col-4 center">
+    <img src="static/vue.png" style="background: none; border: none; box-shadow: none; height: 30%;">
+    <br>
+    Vue.js
+  </div>
+  <div class="col-4 center">
+    <img src="static/react.png" style="background: none; border: none; box-shadow: none; height: 30%;">
+    <br>
+    React
+  </div>
+</div>
+
+----
+
+<img src="static/angular.png" style="background: none; border: none; box-shadow: none; width: 20%; height: 20%;">
 
 ## Angular
 
+
 ----
 
-### Ventajas
+# Ventajas
+
+----
 
 - Se crea con la finalidad de utilizar TypeScript, dandole gran soporte al mismo.
 - Angular-language-service: Templating
@@ -33,7 +79,9 @@
 
 ----
 
-### Desventajas
+# Desventajas
+
+----
 
 - Gran variedad de estructuras diferentes hacen que sea más dificil de aprender en comparación a React y Vue.js
   - Injectables
@@ -51,11 +99,65 @@
 
 ----
 
+<div class="row">
+  <div class="col-4 center">
+    <img src="static/microsoft.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+  <div class="col-4 center">
+    <img src="static/autodesk.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+  <div class="col-4 center">
+    <img src="static/google.png" style="background: none; border: none; box-shadow: none; height: 95px">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-3 center">
+    <img src="static/udemy.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/at&t.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/aws.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/paypal.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-2 center">
+    <img src="static/youtube.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 45%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/adobe.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 35%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/apple.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 35%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/telegram.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 35%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/freelancer.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 45%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/cisco.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 55%;">
+  </div>
+</div>
+
+----
+
+<img src="static/vue.png" style="background: none; border: none; box-shadow: none; width: 20%; height: 20%;">
+
 ## Vue.js
 
 ----
 
-### Ventajas
+# Ventajas
+
+----
 
 - Tiene características similares a Angular.
 - Documentación Detallada.
@@ -69,7 +171,9 @@
 
 ----
 
-### Desventajas
+# Desventajas
+
+----
 
 - Comparado con React y Angular, se cuenta con menos conocimiento sobre Vue.js
   <small>
@@ -79,11 +183,44 @@
 
 ----
 
+<div class="row">
+  <div class="col-4 center">
+    <img src="static/gitlab.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+  <div class="col-4 center">
+    <img src="static/xiaomi.png" style="background: none; border: none; box-shadow: none;">
+  </div>
+  <div class="col-4 center">
+    <img src="static/reuters.png" style="background: none; border: none; box-shadow: none; height: 95px">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-3 center">
+    <img src="static/euronews.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/behance.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/codeship.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/adobe.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+</div>
+
+----
+
+<img src="static/react.png" style="background: none; border: none; box-shadow: none; width: 20%; height: 20%;">
+
 ## React
 
 ----
 
-### Ventajas
+# Ventajas
+
+----
 
 - Facil de aprender, gracias a su diseño simple, uso de JSX para templating y detallada documentación.
 - Los desarrolladores pasan más tiempo programando en JS y menos tiempo preocupandose por los detalles del framework.
@@ -110,7 +247,9 @@
 
 ----
 
-### Desventajas
+# Desventajas
+
+----
 
 - React no cuenta con buenas prácticas implicitas y deja que los desarrolladores tomen decisiones sobre la mejor manera de desarrollar.
   <small>
@@ -119,3 +258,53 @@
 - CSS Modules and CSS-in-JS.
 - React está dejando de lado las componentes basadas en clases.
 - Mezclar templates con lógica de la aplicación puede ser confuso al inicio.
+
+----
+
+<div class="row">
+  <div class="col-3 center" style="padding-top: 15px;">
+    <img src="static/microsoft.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 85%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/dropbox.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 85%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/airbnb.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 85%;">
+  </div>
+  <div class="col-3 center" style="padding-top: 17px;">
+    <img src="static/atlassian.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 85%;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-3 center">
+    <img src="static/facebook.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 30%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/netflix.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 30%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/instagram.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 30%;">
+  </div>
+  <div class="col-3 center">
+    <img src="static/slack.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 30%;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-2 center">
+    <img src="static/whatsapp.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/khanacademy.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 40%;">
+  </div>
+  <div class="col-4 center">
+    <img src="static/asana.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 35%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/intercom.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+  <div class="col-2 center">
+    <img src="static/yahoo.png" style="background: none; border: none; box-shadow: none; resize: contain; width: 50%;">
+  </div>
+</div>
