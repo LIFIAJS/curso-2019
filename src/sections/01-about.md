@@ -13,7 +13,13 @@
 ### Conocimientos previos
 
 - HTML
+- Hoja de Estilos en Cascada
 - Programación orientada a objetos
+
+----
+
+### Conocimientos deseados
+
 - HTTP - Verbos y funcionamiento
 - Arquitectura REST - Fundamentos
 
@@ -24,8 +30,8 @@
 - Adquirir conocimientos generales de JS Vanilla
 - Asimilar el uso de ES6
 - Desarrollar una aplicación FullStack JS sobre ES6
-<small>React - Frontend</small><br>
-<small>Express - Backend</small>
+  - Frontend utilizando ReactJS
+  - Backend utilizando Express.js
 
 ----
 
