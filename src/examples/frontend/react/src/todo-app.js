@@ -15,9 +15,12 @@ class TodoApp extends React.Component {
   }
 
   handleChange(e) {
-    this.setState(() => ({
-      text: e.target.value
-    }))
+    const value = e.target.value
+    this.setState(() => {
+      return ({
+        text: value
+      })
+    })
   }
 
   handleSubmit(e) {
@@ -88,5 +91,5 @@ class TodoList extends React.Component {
 
 ReactDOM.render(
   <TodoApp />,
-  document.getElementById('app')
+  document.getElementById('root')
 )

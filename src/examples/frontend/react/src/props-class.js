@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
 
-export default class Person extends Component {
-    render() {
-        const { name, surname } = this.props
+export class Person extends Component {
+  render() {
+    const { name, surname } = this.props
 
-        return (
-            <div>
-                { name } { surname }
-            </div>
-        )
-    }
+    return (
+      <div>
+        { name } { surname }
+      </div>
+    )
+  }
 }
 
-const Profile = () => <Person name='Tincho' surname='Brecito' />
+export const Profile = () => <Person name='Tincho' surname='Brecito' />
+
+export default {
+  Person,
+  Profile,
+}
