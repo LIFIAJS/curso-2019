@@ -113,13 +113,13 @@ Veremos luego que estas propiedades pueden estar tipadas
 
 #### Función constructora
 
-CODE: frontend/react/props-function.js javascript editable
+CODE: frontend/react/src/props-function.js javascript editable
 
 ----
 
 #### Sintaxis de clases
 
-CODE: frontend/react/props-class.js javascript editable
+CODE: frontend/react/src/props-class.js javascript editable
 
 ----
 
@@ -159,19 +159,63 @@ Note:
 
 ----
 
-### Eventos
+### Renderizado condicional
+
+Nos permite seleccionar que elementos mostrar dependiendo de condiciones booleanas.
 
 ----
 
-### Renderizado condicional
+#### Renderizado condicional simple
+
+CODE: frontend/react/src/conditional-render-simple.js javascript
+
+----
+
+#### Renderizado condicional ternario
+
+CODE: frontend/react/src/conditional-render-ternary.js javascript
+
+----
+
+#### Renderizado condicional
+
+CODE: frontend/react/src/conditional-render.js javascript
 
 ----
 
 ### Renderizado de componentes mediante colecciones
 
+Podemos recorrer una colección, utilizando los datos de cada unos de sus elementos.
+
+Esto se puede hacer de varias maneras. La más usada es mediante la función `map` de `Array`
+
+_Tener en cuenta que debe ser una función que retorne algo **renderizable**_
+
+----
+
+#### Ejemplo
+
+CODE: frontend/react/src/people.js javascript
+
+_El uso de parentesis nos permite obviar la sentencia return_
+
 ----
 
 ### Composición de Componentes
+
+Uso de la propiedad `childen` de las componentes, podemos realizar composiciones de manera muy simple
+
+----
+
+### Eventos
+
+CODE: frontend/react/src/events.js javascript
+
+----
+
+#### Ejemplo
+
+CODE: frontend/react/src/composition.js javascript
 
 ----
 
@@ -203,19 +247,19 @@ Observaremos paso a paso ejemplos que nos permitan repasar cada uno de los conce
 
 ### Componente Simple
 
-CODE: frontend/react/simple-component.js jsx editable
+CODE: frontend/react/src/simple-component.js jsx editable
 
 ----
 
 ### Componente con estado interno
 
-CODE: frontend/react/stateful-component.js jsx editable
+CODE: frontend/react/src/stateful-component.js jsx editable
 
 ----
 
 ### Aplicación
 
-CODE: frontend/react/todo-app.js jsx editable
+CODE: frontend/react/src/todo-app.js jsx editable
 
 ----
 
@@ -224,3 +268,4 @@ CODE: frontend/react/todo-app.js jsx editable
 - [CodePen](https://reactjs.org/redirect-to-codepen/hello-world)
 - [CodeSandbox](https://codesandbox.io/s/new)
 - [Glitch](https://glitch.com/edit/#!/remix/starter-react-template)
+- [Ejemplos interactivos](https://codesandbox.io/s/github/LIFIAJS/curso-2019/tree/develop/src/examples/frontend/react)
