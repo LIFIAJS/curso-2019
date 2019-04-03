@@ -19,4 +19,3 @@ const Help = () => (
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Help />, rootElement);
-
