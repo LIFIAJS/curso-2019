@@ -56,11 +56,11 @@ class TodoApp extends React.Component {
         <h3>TODO</h3>
         <TodoList items={items} />
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="new-todo">
+          <label htmlFor='new-todo'>
             What needs to be done?
           </label>
           <input
-            id="new-todo"
+            id='new-todo'
             onChange={this.handleChange}
             value={text}
           />
