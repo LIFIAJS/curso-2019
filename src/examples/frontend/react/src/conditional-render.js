@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 
 export default class Conditional extends Component {
   render() {
-    if (hasError) {
+    const { hasError } = this.props
+
+    if (hasError()) {
       return (
         <h1>
           Error in component { this.displayName }

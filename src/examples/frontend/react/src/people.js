@@ -10,9 +10,12 @@ export default class People extends Component {
           Array.from(people || []).map((person) => (
             <li key={person.documentNumber}>
               First name: { person.firstname }
+              {' - '}
               Last name: { person.lastname }
+              {' - '}
               {person.documentType}: { person.documentNumber }
-              email: { person.name }
+              {' - '}
+              email: { person.email }
             </li>
           ))
         }

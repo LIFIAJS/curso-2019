@@ -14,6 +14,7 @@ export default class List extends Component {
         {Array.from(elements || []).map((elem, key) => (
           <li key={`${elem.name}-${key}`}>
             {elem.name}
+            {' '}
             <button onClick={onShow}>show</button>
             <button onClick={onUpdate}>update</button>
             <button onClick={onDelete}>delete</button>
