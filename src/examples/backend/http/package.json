@@ -1,0 +1,14 @@
+{
+  "name": "lifiajs-node-sandbox",
+  "version": "1.0.0",
+  "description": "Node example",
+  "scripts": {
+    "start": "nodemon second.js localhost 8080"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  }
+}
