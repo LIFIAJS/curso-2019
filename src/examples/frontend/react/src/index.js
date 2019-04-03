@@ -1,5 +1,5 @@
-import React, { Fragment } from "react"
-import ReactDOM from "react-dom"
+import React, { Fragment } from 'react'
+import ReactDOM from 'react-dom'
 
 const Help = () => (
   <Fragment>
@@ -17,5 +17,5 @@ const Help = () => (
   </Fragment>
 )
 
-const rootElement = document.getElementById("root")
+const rootElement = document.getElementById('root')
 ReactDOM.render(<Help />, rootElement)

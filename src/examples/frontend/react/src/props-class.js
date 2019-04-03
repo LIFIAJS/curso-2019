@@ -1,4 +1,6 @@
-class Person extends Component {
+import React, { Component } from 'react'
+
+export default class Person extends Component {
     render() {
         const { name, surname } = this.props
 

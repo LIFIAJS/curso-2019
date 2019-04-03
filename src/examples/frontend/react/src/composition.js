@@ -1,3 +1,5 @@
+import React, { Component } from 'react'
+
 class Title extends Component {
   render() {
     const { children, title } = this.props
@@ -13,7 +15,7 @@ class Title extends Component {
   }
 }
 
-class Person extends Component {
+export default class Person extends Component {
   render() {
 
     return (

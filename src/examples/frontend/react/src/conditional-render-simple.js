@@ -1,4 +1,6 @@
-class Conditional extends Component {
+import React, { Component } from 'react'
+
+export default class Conditional extends Component {
   render() {
     const { show } = this.props
 

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from 'react'
 
-export default class List extends React.Component {
+export default class List extends Component {
   render() {
     const {
       elements,
