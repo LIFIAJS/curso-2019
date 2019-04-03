@@ -1,3 +1,5 @@
 {
-  "template": "node"
+  "template": "node",
+  "hardReloadOnChange": true
 }
+
