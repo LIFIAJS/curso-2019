@@ -342,7 +342,7 @@ respuesta = "Hola, soy una respuesta!"
 
 ----
 
-```haskell
+```javascript
 x = "La respuesta es " + 42 // "La respuesta es 42"
 y = 42 + " es la respuesta" // "42 es la respuesta"
 ```
@@ -598,7 +598,6 @@ var re = /ab+c/;
 La sentencia de bloque es el tipo de sentencia más básico y se utiliza para agrupar sentencias. El bloque se delimita entre un par de llaves:
 
 ```
-<!-- .element: contenteditable="true" -->
 { 
   sentencia_1;
   sentencia_2;
@@ -950,3 +949,162 @@ var multiplicar = function(x) { return x * x * x; }
 map(multiplicar, [0, 1, 2, 5, 10]);
 ```
 <!-- .element: contenteditable="true" -->
+
+----
+
+## Expresiones y Operadores
+
+Muy similares a los mismos en el resto de los lenguajes de programación. Se puede ver un listado detallado de los operadores en la siguiente [documentación](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
+
+----
+
+## Casos Particulares
+
+----
+
+### Operador condicional (ternario)
+
+El operador condicional es el único operador de JavaScript que necesita tres operandos. El operador asigna uno de dos valores basado en una condición. La sintaxis de este operador es:
+
+```javascript
+condición ? valor1 : valor2
+```
+<!-- .element: contenteditable="true" -->
+----
+
+### Ejemplo
+
+```javascript
+var estado = (edad >= 18) ? "adulto" : "menor";
+```
+<!-- .element: contenteditable="true" -->
+----
+
+### Operador coma
+
+El operador coma (,) simplemente evalúa ambos operandos y retorna el valor del último. Este operador es ante todo utilizado dentro de un ciclo **for**, permitiendo que diferentes variables sean actualizadas en cada iteración del ciclo.
+
+```javascript
+for (var i = 0, j = 9; i <= j; i++, j--) {
+  console.log("a[" + i + "][" + j + "]= " + a[i][j]);
+}
+```
+<!-- .element: contenteditable="true" -->
+----
+
+## Operadores Relacionales
+
+<small>
+  El operador in devuelve true si la propiedad especificada como primer operando se encuentra en el objeto especificado como segundo operando. 
+</small>
+
+```javascript
+var arboles = new Array("secoya", "laurel", "cedro",
+                        "roble", "arce");
+
+0 in arboles;        // devuelve true
+3 in arboles;        // devuelve true
+6 in arboles;        // devuelve false
+
+"laurel" in arboles; 
+// devuelve false (Se debe especificar el número de índice,
+// no el valor contenido en ese índice)
+
+"length" in arboles;
+// devuelve true (length es una propiedad del Array)
+```
+<!-- .element: contenteditable="true" -->
+----
+
+## Operadores unarios
+
+----
+
+### typeof
+
+```javascript
+var miFuncion = new Function("5 + 2");
+var forma = "redonda";
+var largo = 1;
+var hoy = new Date();
+
+typeof miFuncion; // devuelve "function"
+typeof forma;     // devuelve "string"
+typeof largo;     // devuelve "number"
+typeof hoy;       // devuelve "object"
+typeof noExiste;  // devuelve "undefined"
+typeof true;      // devuelve "boolean"
+typeof null;      // devuelve "object"
+```
+<!-- .element: contenteditable="true" -->
+----
+
+### delete
+
+```javascript
+x = 42;
+var y = 43;
+miObj = new Number();
+miObj.h = 4;    // crea la propiedad "h"
+
+delete x;       // devuelve true (se puede eliminar si se declaró implícitamente)
+delete y;       // devuelve false (no se puede eliminar si se declaró con var)
+delete Math.PI; // devuelve false (no se pueden eliminar propiedades predefinidas)
+delete miObj.h; // devuelve true (se pueden eliminar propiedades definidas por el usuario)
+delete miObj;   // devuelve true (se puede eliminar si se ha declarado implícitamente)
+```
+<!-- .element: contenteditable="true" -->
+----
+
+```javascript
+var arboles = new Array("secoya", "laurel", "cedro",
+                        "roble", "arce");
+
+delete arboles[3];
+
+if (3 in arboles) {
+  // Esto no se ejecutará
+}
+```
+<!-- .element: contenteditable="true" -->
+----
+
+### void
+
+```javascript
+void (expression)
+
+void expression
+```
+<!-- .element: contenteditable="true" -->
+<small>
+  El operador void especifica una expresión que será evaluada y no retornará ningún resultado. En los ejemplos anteriores, expresion hace referencia a la expresión que será evaluada.
+</small>
+
+----
+
+### Expresiones
+## Operador de Propagación
+
+----
+
+```javascript
+var partes = ["hombros", "rodillas"];
+var letra = ["cabeza", ...partes, "y", "dedos"];
+```
+<!-- .element: contenteditable="true" -->
+
+----
+
+```javascript
+function f(x, y, z) { }
+var args = [0, 1, 2];
+f(...args);
+```
+<!-- .element: contenteditable="true" -->
+
+----
+
+## Muchos más Operadores
+
+Ver [documentación de operadores](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators).
