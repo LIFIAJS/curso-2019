@@ -1,1 +1,11 @@
 node_modules/
+css/
+js/
+lib/
+plugin/
+static/
+
+!src/css/
+!src/static/
+
+*.html
