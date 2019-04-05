@@ -49,3 +49,35 @@ Por suerte para nosotros, esto ya esta solucionado.
 ## Redux
 
 [Tutorial Redux por su creador](https://egghead.io/courses/getting-started-with-redux)
+
+[Más referencias](https://es.redux.js.org/docs/introduccion/ecosistema.html)
+
+----
+
+### Los 3 principios de Redux
+
+- El estado completo de la aplicación se representa por **un solo** objecto JS
+
+- Este estado, es **inmutable**, toda modificación se inicia mediante **actions**
+
+- Las modificaciones las hace efectivamente una función llamada **reducer**
+
+Más info en <a target='_blank' href='https://es.redux.js.org/docs/introduccion/tres-principios.html'>redux</a>
+
+----
+
+### Estado interno
+
+----
+
+### Actions
+
+----
+
+### Reducer
+
+----
+
+## Ahora a practicar!
+
+[Para ver y jugar](https://github.com/reduxjs/redux/blob/master/docs/introduction/Examples.md)

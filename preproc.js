@@ -3,13 +3,22 @@ const path = require('path')
 
 const LINE_SEPARATOR = '\n'
 const FILE_REF_REGEX = /^FILE: (.+)$/
-const CODE_FILE_REF_REGEX = /^CODE: (\S+)( \S+)( editable)?$/
+const CODE_FILE_REF_REGEX = /^CODE: (\S+) (\S+)( editable)?$/
 
-const codeEditableTemplate = (code, lang = 'javascript') => (`<pre><code class='${lang} hljs' data-trim contenteditable>${code}
+const escapeHtml = unsafe =>
+    unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;")
+
+const codeEditableTemplate = (code, lang = 'javascript') => (`<pre><code class='lang-${lang} hljs' data-trim contenteditable>${escapeHtml(code)}
 </code></pre>`)
 
-const codeTemplate = (code, lang = 'javascript') => (`<pre><code class='${lang} hljs' data-trim>${code}
-</code></pre>`)
+const codeTemplate = (code, lang = 'javascript') => (`\`\`\`${lang}
+${code}
+\`\`\``)
 
 const isFileReference = line => FILE_REF_REGEX.test(line)
 const isCodeFileReference = line => CODE_FILE_REF_REGEX.test(line)
