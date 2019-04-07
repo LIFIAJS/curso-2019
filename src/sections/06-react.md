@@ -207,15 +207,15 @@ Uso de la propiedad `childen` de las componentes, podemos realizar composiciones
 
 ----
 
-### Eventos
-
-CODE: frontend/react/src/events.js javascript
-
-----
-
 #### Ejemplo
 
 CODE: frontend/react/src/composition.js javascript
+
+----
+
+### Eventos
+
+CODE: frontend/react/src/events.js javascript
 
 ----
 
