@@ -997,9 +997,137 @@ Ver [documentación de operadores](https://developer.mozilla.org/en-US/docs/Web/
 
 <aside class="notes"><p>Ejemplos</p>
 </aside></script></section><section data-markdown><script type="text/template">
+### Interfaz Window
+
+Representa una ventana (window) que contiene un DOM.
+
+Cuenta con la propiedad `document` que representa el DOM cargado en esa ventana.
+
+Todos los navegadores cuentan con una instancia de la ventana actual, almacenada en la variable global `window`
+</script></section><section data-markdown><script type="text/template">
+### Constructores de Window
+
+- DOMParser
+- Image
+- Worker
+</script></section><section data-markdown><script type="text/template">
+### Propiedades de Window
+
+- console: Consola del navegador
+- history: Interfaz para manejar el historial de sesión del navegdor
+- location: Ubicación actual, puede cambiarse
+- document: Documento DOM cargado en la ventana
+- localStorage: Almacenamiento del navegador
+- sessionStorage: Almacenamiento de la sesión
+- naviagator: Información del navegador
+
+Y muchas más
+</script></section><section data-markdown><script type="text/template">
+### Métodos de Window
+
+- alert(message)
+- close()
+- confirm(message)
+- find(aString, aCaseSensitive, aBackwards, aWrapAround, aWholeWord, aSearchInFrames, aShowDialog)
+</script></section><section data-markdown><script type="text/template">
+### Interfaz Document
+
+Sirve para comunicarse e interactuar con un DOM
+
+Hereda de `Node`
+
+En el navegador contamos con una variable global `document` que nos permite acceder al DOM cargado en `window`
+
+<small>Esta variable document es una propiedad de la variable `window`, luego veremos porque podemos accederla de esta forma</small>
+
+<aside class="notes"><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document">https://developer.mozilla.org/en-US/docs/Web/API/Document</a></p>
+</aside></script></section><section data-markdown><script type="text/template">
+### Propiedades de Document
+
+- body
+- location
+- defaultView
+- cookie (HTML5)
+</script></section><section data-markdown><script type="text/template">
+### Métodos de Document
+
+- createElement(tagName[, options])
+- getElementsByClassName(name)
+- getElementsByName(name)
+- getElementById(id)
+- querySelector(selectors)
+- querySelectorAll(selectors)
+</script></section><section data-markdown><script type="text/template">
+### Interfaz Node
+
+Sirve para interactuar con un nodo específico del DOM
+
+Hereda de `EventTarget`
+</script></section><section data-markdown><script type="text/template">
+### Propiedades de Node
+
+- childNodes
+- firstChild
+- lastChild
+- nodeName
+- nodeType
+- parentNode
+- parentElement
+- textContent
+</script></section><section data-markdown><script type="text/template">
+### Métodos de Node
+
+- appendChild(Node)
+- cloneNode([deep])
+- isEqualNode(otherNode)
+- isSameNode(otherNode)
+- normalize()
+- removeChild(child)
+- replaceChild(newChild, oldChild)
+</script></section><section data-markdown><script type="text/template">
+### Interfaz EventTarget
+
+Nos permite interactuar con eventos, asignarlos a elementos (como window, document, nodos, etc)
+
+La interfaz es muy simple, cuenta con solo 3 métodos
+</script></section><section data-markdown><script type="text/template">
+### Métodos de EventTarget
+
+- addEventListener(type, listener[, options])
+- removeEventListener(type, listener[, options])
+- target.dispatchEvent(event)
+</script></section><section data-markdown><script type="text/template">
+### Tipos de eventos
+
+Hay muchos eventos, los más comunes son
+
+- click
+- keydown | keypress | keyup
+- focus
+- cut | copy | paste
+- ...
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+</script></section><section data-markdown><script type="text/template">
+### Práctica
+
+Dado un HTML, se debe poder completar la funcionalidad de una lista de tareas básica.
+
+Se debe poder:
+
+- Listar las tareas pendientes
+- Listar las tareas finalizadas
+- Crear una tarea nueva
+- Finalizar una tarea
+
+_No pueden existir 2 tareas **en curso** llamadas igual._
+
+Se debe poder limpiar el listado
+</script></section><section data-markdown><script type="text/template">
 ### Forma antigua de usar JS
 
 - JQuery / Selectors
+- Manejo directo sobre el DOM
 - Eventos
 - Lenguaje para "efectos" en la web
 </script></section><section data-markdown><script type="text/template">
@@ -1010,7 +1138,6 @@ Ver [documentación de operadores](https://developer.mozilla.org/en-US/docs/Web/
   - No hay nada parecido a un import, require o include en un navegador
 - No queremos programar mas en Vanilla. Queremos un require!
   - Transpilación
-
 </script></section></section><section ><section data-markdown><script type="text/template">
 ### Nuevo enfoque de programación con JS
 </script></section><section data-markdown><script type="text/template">
@@ -1023,6 +1150,115 @@ Ver [documentación de operadores](https://developer.mozilla.org/en-US/docs/Web/
   - TypeScript
   - CoffeeScript
   - ...
+</script></section><section data-markdown><script type="text/template">
+## EcmaScript
+
+En este curso nos vamos a centrar en el estándar EcmaScript, apengándonos más que nada al estándar ES6
+</script></section><section data-markdown><script type="text/template">
+### Un poco de historia
+
+ES es una especificación estandarizada por Ecma Internacional, en `ECMA-262` (1997) y en `ISO/IEC 16262` (1998)
+
+Actualmente se encuentra en su versión 9 lanzada en Junio de 2018, y se esta trabajando en su versión 10 que va a ser lanzada en 2019
+
+<aside class="notes"><p><a href="https://medium.com/@selvaganesh93/javascript-whats-new-in-ecmascript-2019-es2019-es10-35210c6e7f4b">https://medium.com/@selvaganesh93/javascript-whats-new-in-ecmascript-2019-es2019-es10-35210c6e7f4b</a></p>
+<p><a href="https://github.com/tc39/proposals">https://github.com/tc39/proposals</a></p>
+</aside></script></section><section data-markdown><script type="text/template">
+### ES1 (Junio 1997)
+
+Primera edición del documeto ECMA-262
+
+### ES2 (Junio 1998)
+
+Edición del documento por ISO/IEC 16262
+</script></section><section data-markdown><script type="text/template">
+### ES3 (Diciembre 1999)
+
+- RegExp
+- Manejo de strings mejorado
+- Nuevas estrucutras de control
+- try/catch
+- ...
+</script></section><section data-markdown><script type="text/template">
+### ES4 (abandonada)
+
+Se discutía incluir clases, módulos, tipado estatico, generadores e iteradores, asignación por deconstrucción, tipos de datos algebraicos, y más.
+
+Debido a la complejidad, fue abandonado el proyecto, para seguir en su siguiente versión
+</script></section><section data-markdown><script type="text/template">
+### ES5 (Diciembre 2009)
+
+- `strict mode`
+- `String.trim()`
+- `Array.isArray()`
+- `Array.forEach()`
+- `Array.map()`, `Array.filter()`, `Array.reduce()`, `Array.reduceRight()`
+- `Array.every()` y `Array.some()`
+- `Array.indexOf()` y `Array.lastIndexOf()`
+- `JSON.parse()` y `JSON.stringify()`
+- `Date.now()`
+</script></section><section data-markdown><script type="text/template">
+### ES6 (Junio 2015)
+
+- Clases
+- módulos
+- for/of loops
+- generadores
+- funciones arrow
+- arreglos tipados
+- colecciones (maps, sets and weak maps)
+- Promises
+- y mucho más
+
+[Features](http://es6-features.org)
+</script></section><section data-markdown><script type="text/template">
+### ES7 (Junio 2016)
+
+- Operador exponencial (`**`)
+- `String.prototype.padStart` y `String.prototype.padEnd`
+- `Array.prototype.includes`
+- `Object.entries` y `Object.values`
+- Trailing Commas
+</script></section><section data-markdown><script type="text/template">
+### ES8 (Junio 2017)
+
+- `Object.values()` y `Object.entries()`
+- `String.prototype.padStart()` y `String.prototype.padEnd()`
+- `Object.getOwnPropertyDescriptors()`
+- Trailing commas en parametros de funciones
+- Async/Await
+
+[Medium](https://medium.com/@Rashaunwarner/new-es8-features-f3d8b7b4fc8c)
+</script></section><section data-markdown><script type="text/template">
+### ES9 (Junio 2018)
+
+- propiedades rest/spread properties
+- iteraciones asincrónicas
+- `Promise.prototype.finally()`
+- adiciones a RegExp
+</script></section><section data-markdown><script type="text/template">
+### ES10 (proximamente 2019)
+
+- Bigint
+- `String.prototype.matchAll()`
+- import dinámicos
+- `Array.flat()` y `Array.flatMap()`
+- `Object.fromEntries()`
+- `String.trimStart()` y `String.trimEnd()`
+- Well-formed `JSON.stringify()`
+- `Array.prototype.sort()` estable
+- `Function.toString()`
+- ...
+
+[Medium](https://medium.freecodecamp.org/the-complete-guide-to-es10-features-5fd0feb9513a)
+
+<aside class="notes"><p><a href="https://medium.freecodecamp.org/the-complete-guide-to-es10-features-5fd0feb9513a">https://medium.freecodecamp.org/the-complete-guide-to-es10-features-5fd0feb9513a</a></p>
+<p><a href="https://medium.freecodecamp.org/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e">https://medium.freecodecamp.org/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e</a></p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_ECMAScript_engines">https://en.wikipedia.org/wiki/List_of_ECMAScript_engines</a></p>
+</aside></script></section><section data-markdown><script type="text/template">
+### ES en los navegadores
+
+<img src="static/es-versions.png" style="background:none; border:none; box-shadow:none; width: 75%; height: 75%;">
 </script></section><section data-markdown><script type="text/template">
 - Uso de herramientas para manejar los archivos estaticos
   - Webpack
@@ -1606,39 +1842,6 @@ _El uso de parentesis nos permite obviar la sentencia return_
 
 Uso de la propiedad `childen` de las componentes, podemos realizar composiciones de manera muy simple
 </script></section><section data-markdown><script type="text/template">
-### Eventos
-
-```javascript
-import React, { Component } from 'react'
-
-export default class List extends Component {
-  render() {
-    const {
-      elements,
-      onShow,
-      onUpdate,
-      onDelete
-    } = this.props;
-
-    return (
-      <ul>
-        {Array.from(elements || []).map((elem, key) => (
-          <li key={`${elem.name}-${key}`}>
-            {elem.name}
-            {' '}
-            <button onClick={onShow}>show</button>
-            <button onClick={onUpdate}>update</button>
-            <button onClick={onDelete}>delete</button>
-            <button onClick={() => console.log(elements[key])}>console</button>
-          </li>
-        ))}
-      </ul>
-    );
-  }
-}
-
-```
-</script></section><section data-markdown><script type="text/template">
 #### Ejemplo
 
 ```javascript
@@ -1673,9 +1876,42 @@ export default class Person extends Component {
 }
 ```
 </script></section><section data-markdown><script type="text/template">
+### Eventos
+
+```javascript
+import React, { Component } from 'react'
+
+export default class List extends Component {
+  render() {
+    const {
+      elements,
+      onShow,
+      onUpdate,
+      onDelete
+    } = this.props;
+
+    return (
+      <ul>
+        {Array.from(elements || []).map((elem, key) => (
+          <li key={`${elem.name}-${key}`}>
+            {elem.name}
+            {' '}
+            <button onClick={onShow}>show</button>
+            <button onClick={onUpdate}>update</button>
+            <button onClick={onDelete}>delete</button>
+            <button onClick={() => console.log(elements[key])}>console</button>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+}
+
+```
+</script></section><section data-markdown><script type="text/template">
 ### Jerarquía de componentes
 
-React es una librería cuya API es orientada a objetos.
+React es una librería cuya estructura es orientada a objetos.
 
 ¿es recomendable utilizar jerarquías de componentes para evitar código repetido?
 </script></section><section data-markdown><script type="text/template">
