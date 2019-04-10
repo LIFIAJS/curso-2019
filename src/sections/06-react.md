@@ -221,7 +221,7 @@ CODE: frontend/react/src/events.js javascript
 
 ### Jerarquía de componentes
 
-React es una librería cuya API es orientada a objetos.
+React es una librería cuya estructura es orientada a objetos.
 
 ¿es recomendable utilizar jerarquías de componentes para evitar código repetido?
 

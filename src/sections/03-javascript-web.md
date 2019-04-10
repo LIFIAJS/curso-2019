@@ -75,6 +75,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document
 
 - body
 - location
+- defaultView
 - cookie (HTML5)
 
 ----
