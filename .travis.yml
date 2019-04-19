@@ -10,6 +10,7 @@ cache:
 script:
   - yarn
   - yarn build
+  - yarn postbuild
   - mv curso.html index.html
 
 deploy:
