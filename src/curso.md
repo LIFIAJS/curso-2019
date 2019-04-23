@@ -2,7 +2,7 @@
 title: Cursos 2019
 theme: solarized
 highlightTheme: atom-one-dark
-preprocessor: script/preproc.js
+preprocessor: preproc.js
 
 ---
 
