@@ -6,13 +6,13 @@
 |    2   |    2  | 10/04 | Javascript en la web                            |     1    | 
 |        |    3  | 12/04 | Nuevo enfoque en Javascript                     |     1    |
 |    3   |    4  | 17/04 | Repaso general                                  |     2    |
-|        |    5  | 19/04 | Frontend                                        |     2    |
-|    4   |    6  | 24/04 | React - Introducción                            |     3    |
-|        |    7  | 26/04 | React - Fundamentos                             |     3    |
-|    5   |    8  | 01/05 | React - Practica y TP Final                     |     4    |
-|        |    9  | 03/05 | Patrones en React                               |     4    |
-|    6   |   10  | 08/05 | Repaso practicas                                |     4    |
-|        |   11  | 10/05 | Patrones en React. Buenas prácticas en frontend |     5    |
+|        |    5  | 24/04 | Frontend                                        |     2    |
+|    4   |    6  | 26/04 | React - Introducción                            |     3    |
+|        |    7  | 03/05 | React - Fundamentos                             |     3    |
+|    5   |    8  | 08/05 | React - Practica y TP Final                     |     4    |
+|        |    9  | 10/05 | Patrones en React                               |     4    |
+|    6   |   10  | 15/05 | Repaso practicas                                |     4    |
+|        |   11  | 17/05 | Patrones en React. Buenas prácticas en frontend |     5    |
 |    7   |   12  | 22/05 | Webpack, ESLint y Babel                         |     5    |
 |        |   13  | 24/05 | Redux - Fundamentos                             |     6    |
 |    8   |   14  | 29/05 | Redux - Práctica, Testing en Frontend           |     6    |
