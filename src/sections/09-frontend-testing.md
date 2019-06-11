@@ -30,11 +30,7 @@ Integrable con gran número de librerías para testing
 
 Supongamos que tenemos una función que suma 2 números, un test simple podría ser:
 
-```js
-test('2 + 2 = 4', () => {
-  expect(sum(2, 2)).toBe(4)
-})
-```
+CODE: testing/jest/src/simple.test.js javascript
 
 ----
 
@@ -42,11 +38,7 @@ test('2 + 2 = 4', () => {
 
 Ahora escribamos la función que pase el test
 
-```js
-function sum(x, y) {
-  return x + y
-}
-```
+CODE: testing/jest/src/simple.js javascript
 
 ¿Que pasa si solo le mando un parámetro?
 
@@ -56,21 +48,7 @@ function sum(x, y) {
 
 Supongamos que tenemos una función suma
 
-```js
-describe('Test función de suma', () => {
-  it('2 + 2 = 4', () => {
-    expect(sum(2, 2)).toBe(4)
-  })
-
-  it('2 = 2', () => {
-    expect(sum(2)).toBe(2)
-  })
-
-  it('sum sin parámetros', () => {
-    expect(sum()).toBe(0)
-  })
-})
-```
+CODE: testing/jest/src/multiple.test.js javascript
 
 Ahora tenemos que modificar la función para que pase este segundo test
 
@@ -78,11 +56,7 @@ Ahora tenemos que modificar la función para que pase este segundo test
 
 ### jest - multiples test (cont)
 
-```js
-function sum(x = 0, y = 0) {
-  return x + y
-}
-```
+CODE: testing/jest/src/multiple.js javascript
 
 ----
 
