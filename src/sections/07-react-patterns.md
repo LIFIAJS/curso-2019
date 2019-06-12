@@ -38,10 +38,14 @@ que recibió en sus propiedades
 
 ----
 
+### Ejemplos
+
+----
+
 ### Componentes de alto orden
 
-De igual manera que en funciona, una función de alto orden es aquella recibe y retorna una función,
-las componentes de alto orden son aquellas que reciben una componente, y retorna una nueva componente.
+De igual manera que en funcional, una función de alto orden es aquella recibe y/o retorna una función,
+las componentes de alto orden son aquellas que reciben una componente, y/o retorna una nueva componente.
 
 ----
 

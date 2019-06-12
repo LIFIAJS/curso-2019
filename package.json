@@ -21,5 +21,8 @@
   },
   "devDependencies": {
     "reveal-md": "^3.0.3"
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
   }
 }
