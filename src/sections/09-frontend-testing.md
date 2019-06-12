@@ -13,8 +13,10 @@
 ### Librerías
 
 - jest
-- react-test-renderer o enzyme
+- react-test-renderer
+- enzyme
 - sinon
+- axios-mock-adapter
 
 ----
 
@@ -167,42 +169,15 @@ Librería para hacer mocks de datos, funciones o hasta servidores
 
 ----
 
-### Sinon - fakeServer
+### axios-mock-adapter
 
-Simula rutas de un servidor, definiendo `método`, `tipo de respuesta` y `respuesta`
-
-```js
-server = sinon.createFakeServer()
-server.respondWith('GET', '/api/v1.0/users', [
-  200,
-  { 'Content-Type': 'application/json' },
-  '[{ "name": "lucasdc", "email":  "lucasdc@gmail.com" }, { "name": "ulises", "email": "ulises@gmail.com" }]'
-])
-
-axios.get('/api/v1.0/users').then(data => console.log(data))
-// [{ "name": "lucasdc", "email":  "lucasdc@gmail.com" }, { "name": "ulises", "email": "ulises@gmail.com" }]
-
-// No olvidar la respuesta del servidor
-server.respond()
-```
+CODE: testing/axios-mock-adapter/src/axios-mock-adapter.test.js javascript
 
 ----
 
-### Sinon - fakeServer - respondImmediately
+### Redux - Testing
 
-O configurando la respuesta automática
-
-```js
-server = sinon.createFakeServer({ respondImmediately: true })
-server.respondWith('GET', '/api/v1.0/users', [
-  200,
-  { 'Content-Type': 'application/json' },
-  '[{ "name": "lucasdc", "email":  "lucasdc@gmail.com" }, { "name": "ulises", "email": "ulises@gmail.com" }]'
-])
-
-axios.get('/api/v1.0/users').then(data => console.log(data))
-// [{ "name": "lucasdc", "email":  "lucasdc@gmail.com" }, { "name": "ulises", "email": "ulises@gmail.com" }]
-```
+Al momento de testear redux, se puede hacer foco en 2 diferentes componentes de redux, las **actions** y los **reducers**
 
 ----
 
